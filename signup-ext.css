@@ -1,0 +1,148 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+.logo img{
+   height:40px;
+   width:100px;
+
+}
+.box{
+    padding:20px 50px;
+    z-index:10;
+    position: relative;
+}
+.header{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/87a1d9d8-a21d-4109-ba3a-c10d9055f5cf/2341e349-a6fc-4b04-a0ad-9b21defa1f88/IN-en-20220307-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    height:100vh;
+    background-image: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width:100%;
+
+}
+.header::before{
+    content:'';
+    background-color: rgba(0,0,0,.5);
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.signin{
+    padding:60px;
+    z-index:90;
+    position:relative;
+    max-width: 350px;
+    height:500px;
+    margin-left: 50%;
+    background-color: rgba(0,0,0,.75);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    min-width: 300px;
+}
+.signin h2{
+    font-size: 32px;
+    color:white;
+    margin-top: 0;
+}
+
+.signin input{
+    height:50px;
+    width:100%;
+    border-radius: 3px;
+    color:white;
+    background-color: #333;
+    border:1px solid  #333;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+.input{
+    margin-bottom: 25px;
+    min-width: 220px;
+}
+.input1{
+    margin-bottom: 25px;
+    padding: 10px;
+}
+.input1 a{
+    height:50px;
+    color:white;
+    background-color:#e50914;
+    width:100%;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    border:1px solid #e50914;
+    text-decoration: none;
+    padding: 15px 80px;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+.user{
+    display: flex;
+    color:white;
+    font-size: 14px;
+}
+.u{
+    display: flex;
+    padding:2px;
+    align-items: center;
+    
+}
+.u a{
+    text-decoration: none;
+    color: #f5686f;
+}
+.ok a{
+    text-decoration: none;
+    color:white;
+}
+.mssg{
+    color:white;
+    font-size:13px;
+    white-space: nowrap;
+    
+}
+
+/* footer */
+.footer{
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    width:100%;
+}
+
+.footer ,
+.footer a{
+    color: #999999;
+    font-size: 1.0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+.footer-cols ul{
+    list-style-type:none;
+}
+.footer p{
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li{
+    line-height: 2.4;
+}
